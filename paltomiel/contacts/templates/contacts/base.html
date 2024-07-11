@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Agenda Virtual con Django</title>
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body class="container py-5">
+
+    <div class="p-5 border border-1 shadow rounded">
+        <h1 class="fw-bold text-primary">Bienvenido a Mi Agenda</h1>
+        <h2>
+            "Proyecto CRUD" <br>
+            <br>
+            Programacion Orientada a Objetos <br>
+            <br>
+            D.S.I. IV "A"
+         </h2>
+
+        <p>
+            Consulta, crea, Actualiza y Elimina tus contactos de forma fácil y segura.
+        </p>
+        <p>
+            Grupo Paltomiel: <br>
+            - Roy Abad Idme Ramos <br>
+            - Pedro Fernando Callo Arias
+        </p>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>
